@@ -1,0 +1,1 @@
+Este es el archivo Tigrea.txt en la carpeta C:\Users\pc\Documents\GitHub\datu-atzipena2024\1-Fitxategiak\fileio/src/main/java/paagbi/karpeta_berriak/animaliak/ugaztunak
