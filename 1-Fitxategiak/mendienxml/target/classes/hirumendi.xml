@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mendiak>
+    <Mendia>
+        <Altuera>1481.0</Altuera>
+        <Izena>Gorbeia</Izena>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Altuera>1551.0</Altuera>
+        <Izena>Aizkorri</Izena>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Altuera>1346.0</Altuera>
+        <Izena>Txindoki</Izena>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+</mendiak>

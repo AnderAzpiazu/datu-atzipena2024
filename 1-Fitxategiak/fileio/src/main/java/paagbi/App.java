@@ -38,7 +38,7 @@ public class App {
         }
 
         String rutaCarpeta = carpetas[opcion - 1];
-        
+
         // Crear la carpeta si no existe
         File carpeta = new File(rutaCarpeta);
         if (!carpeta.exists()) {
@@ -58,20 +58,25 @@ public class App {
 
         File archivo = new File(rutaCarpeta + "/" + nombreArchivo + ".txt");
 
-        // Intentar crear el archivo
+        // Solicitar el texto a escribir en el archivo
+        System.out.println("Ingrese el texto que desea escribir en el archivo:");
+        String contenido = scanner.nextLine();
+
+        // Intentar crear el archivo y escribir el contenido
         try {
             if (archivo.createNewFile()) {
                 System.out.println("Archivo creado: " + archivo.getPath());
 
-                // Escribir algo en el archivo
+                // Escribir el texto ingresado por el usuario en el archivo
                 try (FileWriter writer = new FileWriter(archivo)) {
-                    writer.write("Este es el archivo " + nombreArchivo + ".txt en la carpeta " + rutaCarpeta);
+                    writer.write(contenido);
+                    System.out.println("Texto escrito en el archivo.");
                 }
             } else {
                 System.out.println("El archivo ya existe: " + archivo.getPath());
             }
         } catch (IOException e) {
-            System.out.println("Error al crear el archivo: " + e.getMessage());
+            System.out.println("Error al crear o escribir en el archivo: " + e.getMessage());
         }
 
         scanner.close();
